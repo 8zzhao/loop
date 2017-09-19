@@ -10,15 +10,23 @@ console.log(counter+"seconds left");
 
 }
 
-function loopTwo(){
-let sum =0
-for(let i=0; i=powersOfTwo; i=i+1){
-    console.log(i);
+function loopTwo(number,power){
+let sum =0;
+for(let p=0; p<=power; p++){
+  sum=sum+Math.pow(number,p);
+return sum;
 }
+
 
 }
 
-function loopThree(){
+function loopThree(symbol,number){
+  let lasttime="";
+  for(let s=1; s<=number; s++){
+    lasttime=lasttime+symbol;
+    console.log(lasttime);
+  }
+}
 
 
 }
